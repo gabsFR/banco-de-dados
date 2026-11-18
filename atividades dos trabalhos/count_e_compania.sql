@@ -27,6 +27,13 @@ select count(*) from jogadores;
 select distinct clube from jogadores;
 -- 2a.
 select MAX(gols) from jogadores;
+
+-- ativ em grupo
+SELECT
+    SUM(valor_milhoes) AS valor_total_elenco,
+    MAX(valor_milhoes) AS maior_valor_mercado,
+    AVG(valor_milhoes) AS valor_medio_jogadores
+FROM jogadores;
 -- 2b.
 select MIN(assistencias) from jogadores;
 -- 3a.
